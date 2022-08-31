@@ -294,14 +294,122 @@ header{
 
 
 .image-map{
-
-    left: 10rem;
-    top:5rem;
-    position: relative;
-    object-fit: contain;
-    width: 50rem;
-    height: 30rem;
+    position: absolute;
+    top:4rem;
+    left: 22rem;
+    width: 30rem;
+    height: 32rem;
 }
+
+area {
+    outline: 5px solid var(--color-bg-4);
+}
+
+/*=================================Log In!!=======================*/
+
+.full-screen-container {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: var(--color-bg-1);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.login-title {
+    margin: 0;
+    color: var(--color-bg-4);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+}
+
+.input-group input {
+    font-size: 1.25rem;
+    padding: .5em;
+    background-color: hsl(var(--color-bg-4), .3);
+    border: none;
+    outline: none;
+    border-radius: .25em;
+    color: var(--color-bg-4);
+    font-weight: lighter;
+}
+
+.input-group.success input {
+    box-shadow: 0 0 0 1px hsl(var(--color-bg-4));
+}
+
+.input-group.error input {
+    box-shadow: 0 0 0 1px hsl(var(--color-primary-variant));
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 0 1px hsl(var(--color-primary));
+}
+
+.input-group .msg {
+    display: none;
+    font-size: .75rem;
+}
+
+.input-group.success .msg,
+.input-group.error .msg {
+    display: block;
+}
+
+.input-group.error .msg {
+    color: hsl(var(--color-bg-4));
+}
+
+.input-group.success .msg {
+    color: hsl(var(--color-primary-variant));
+}
+
+.login-button {
+    padding: .5em 1em;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--color-bg-4);
+    background-color: hsl(var(--color-primary), .25);
+    border: 1px solid hsl(var(--color-primary-variant));
+    border-radius: .25em;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-button:hover,
+.login-button:focus {
+    background-color: hsl(var(--color-primary), .4);
+}
+
+
 
 
 /*=================================Gallery!!=======================*/
@@ -348,6 +456,7 @@ header{
 
     margin-top: 8rem;
 }
+
 
 
 
