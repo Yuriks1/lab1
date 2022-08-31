@@ -13,6 +13,11 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');</style>
 
+
+  <!-- Swiper CDN-->
+  <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
   <!-- Custom stylesheet-->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -45,37 +50,51 @@
   </div>
 </nav>
 <!--============= End of Nav========-->
-<br/>
-
-<!--============= End of header section========-->
 
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<!--=============Start of videos========-->
+
+<section id="Videos">
+
+  <div class="container gallery__container swiper mySwiper" >
+
+    <div class="swiper-wrapper" >
+
+      <div class="swiper-slide">
+        <iframe id="player0" width="500" height="300" src="./videos/gallery1.mp4" allowfullscreen iframe-video></iframe>
+      </div>
+
+      <div class="swiper-slide">
+        <iframe id="player1" width="500" height="300" src="./videos/gallery2.mp4"  allowfullscreen iframe-video></iframe>
+      </div>
+
+      <div class="swiper-slide">
+        <iframe id="player3" width="500" height="300" src="./videos/gallery3.mp4" allowfullscreen iframe-video></iframe>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</section>
 
 
 
+
+
+
+<!--=============End of videos========-->
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 
 </body>

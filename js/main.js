@@ -18,6 +18,7 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     breakpoints:{
+
         599:{
             slidesPerView: 2,
             spaceBetween: 40,
