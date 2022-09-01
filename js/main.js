@@ -30,3 +30,38 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+async function getUser() {
+    let url = './data/user.json';
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function renderUser() {
+    let users = await getUser();
+    let html = '';
+    users.forEach(user => {
+        let htmlSegment = `<div class="user">
+                            <img src="${user.profileURL}"  alt="mypicture">
+                            <h2>${user.firstName} ${user.lastName}</h2>
+                            <div class="email"><a href="email:${user.email}">${user.email}</a></div>
+                            <div ${user.profession}">${user.profession}</a></div>
+                            <div ${user.description}">${user.description}</a></div>
+
+
+                            
+
+                        </div>`;
+
+        html += htmlSegment;
+    });
+
+    let profile = document.querySelector('.profile');
+    profile.innerHTML = html;
+}
+
+renderUser();
+

@@ -116,7 +116,7 @@ nav{
 .nav__links{
 
     display: flex;
-    gap: 4rem;
+    gap: 2.5rem;
 
 }
 
@@ -512,6 +512,25 @@ footer{
     gap: 5rem;
 
 }
+/*=================================Profile!!=======================*/
+
+
+.AboutMe{
+
+    margin-top: 20rem;
+
+}
+
+.profile img{
+
+    position: absolute;
+    top:7rem;
+    left: 30rem;
+    width: 25rem;
+    height: 25rem;
+
+}
+
 
 
 
