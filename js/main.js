@@ -105,6 +105,14 @@ async function renderUser() {
 
 renderUser();
 
+function saveDynamicDataToFile() {
+
+    var userInput = document.getElementById("myText").value;
+
+    var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "dynamic.txt");
+}
+
 
 
 

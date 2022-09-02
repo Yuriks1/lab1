@@ -16,6 +16,9 @@
     <!-- Custom stylesheet-->
     <link href="./css/style.css" rel="stylesheet">
 
+    <script src="js/FileSaver.js"></script>
+
+
 </head>
 <body>
 
@@ -54,21 +57,19 @@
 
 <div class="full-screen-container">
     <div class="login-container">
-        <h1 class="login-title">Welcome</h1>
+        <h1 class="login-title">Welcome to TopSecret Page</h1>
         <form class="form">
             <div class="input-group success">
                 <label for="email">Email</label>
-                <input id="email" name="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder=" " required
-                       type="email">
+                <input type="email" name="email" id="email" required/>
             </div>
 
             <div class="input-group error">
                 <label for="password">Password</label>
-                <input id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder=" "
-                       required type="password">
+                <input type="password" name="password" id="password" required />
             </div>
 
-            <button class="login-button" type="submit">Login</button>
+            <button type="submit" class="login-button">Login</button>
         </form>
     </div>
 </div>
