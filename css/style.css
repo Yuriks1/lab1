@@ -948,15 +948,17 @@ fieldset {
     #Videos{
 
         margin-top: 10rem;
+        height: 80%;
+        width: 80%;
+        position: center;
     }
 
 
     .image-map{
-        position: center;
-        height: fit-content;
-        width: fit-content;
-        top: 10rem;
-        display: flex;
+
+        width: var(--container-width-md);
+        position: relative;
+        left: 1rem;
 
     }
 
@@ -975,7 +977,9 @@ fieldset {
     }
 
 
-
+    .AboutMe img{
+        display: none;
+    }
 
 
 

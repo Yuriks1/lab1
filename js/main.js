@@ -31,9 +31,8 @@ closeNavBtn.addEventListener('click',closeNav);
 
 
 //SwiperJS
-
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
@@ -41,18 +40,19 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints:{
 
-        599:{
+        0:{
             slidesPerView: 1,
-            spaceBetween: 40,
+            spaceBetween: 5,
         },
         1023:{
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 60,
         }
     }
 });
 
-async function getUser() {
+async function
+ getUser() {
     let url = './data/user.json';
     try {
         let res = await fetch(url);
