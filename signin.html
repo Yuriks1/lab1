@@ -1,75 +1,77 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gran Canaria</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Gran Canaria</title>
 
-  <!-- IconScout CDN-->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  <!-- GOOGLE FONT-->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');</style>
+    <!-- IconScout CDN-->
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <!-- GOOGLE FONT-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');</style>
 
-  <!-- Custom stylesheet-->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom stylesheet-->
+    <link href="./css/style.css" rel="stylesheet">
 
 </head>
 <body>
 
 <nav>
-  <div class="container nav__container">
-    <a href="index.html" class="nav__logo"><img src="./images/earth.png" alt="nav logo"></a>
+    <div class="container nav__container">
+        <a class="nav__logo" href="index.html"><img alt="nav logo" src="./images/earth.png"></a>
 
-    <ul class="nav__links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./pictures.html">Pictures</a></li>
-      <li><a href="./videos.html">Videos</a></li>
-      <li><a href="./secrets.html">Best kept secrets!</a></li>
-      <li><a href="./aboutme.html">About me</a></li>
+        <ul class="nav__links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pictures.html">Pictures</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./secrets.html">Best kept secrets!</a></li>
+            <li><a href="./aboutme.html">About me</a></li>
 
-    </ul>
+        </ul>
 
-    <ul class="nav__socials">
-      <li><a href="https://api.whatsapp.com/send?phone=+37125750577&text=Hello!" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
-      <li><a href="https://www.instagram.com/explore/locations/793207234/gran-canaria/" target="_blank"><i class="uil uil-instagram"></i></a></li>
-      <li><a href="https://twitter.com/gctourism" target="_blank"><i class="uil uil-twitter-alt"></i></a></li>
-      <li><a href="https://www.youtube.com/watch?v=yw7v2UyObc8" target="_blank"><i class="uil uil-youtube"></i></a></li>
-      <li><a href="signin.html" target="_blank"><i class="uil uil-signin"></i></a></li>
+        <ul class="nav__socials">
+            <li><a href="https://api.whatsapp.com/send?phone=+37125750577&text=Hello!" target="_blank"><i
+                    class="uil uil-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/explore/locations/793207234/gran-canaria/" target="_blank"><i
+                    class="uil uil-instagram"></i></a></li>
+            <li><a href="https://twitter.com/gctourism" target="_blank"><i class="uil uil-twitter-alt"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=yw7v2UyObc8" target="_blank"><i
+                    class="uil uil-youtube"></i></a></li>
+            <li><a href="signin.html" target="_blank"><i class="uil uil-signin"></i></a></li>
 
-    </ul>
+        </ul>
 
-    <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
-    <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+        <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
 
 
-  </div>
+    </div>
 </nav>
 
 
-
 <div class="full-screen-container">
-  <div class="login-container">
-    <h1 class="login-title">Welcome</h1>
-    <form class="form">
-      <div class="input-group success">
-        <label for="email">Email</label>
-        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="email" name="email" id="email" required placeholder=" ">
-      </div>
+    <div class="login-container">
+        <h1 class="login-title">Welcome</h1>
+        <form class="form">
+            <div class="input-group success">
+                <label for="email">Email</label>
+                <input id="email" name="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder=" " required
+                       type="email">
+            </div>
 
-      <div class="input-group error">
-        <label for="password">Password</label>
-        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" name="password" id="password" required placeholder=" ">
-      </div>
+            <div class="input-group error">
+                <label for="password">Password</label>
+                <input id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder=" "
+                       required type="password">
+            </div>
 
-      <button type="submit" class="login-button">Login</button>
-    </form>
-  </div>
+            <button class="login-button" type="submit">Login</button>
+        </form>
+    </div>
 </div>
-
-
 
 
 <script src="./js/main.js"></script>

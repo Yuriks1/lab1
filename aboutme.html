@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About me!</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>About me!</title>
 
-  <!-- IconScout CDN-->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  <!-- GOOGLE FONT-->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');</style>
+    <!-- IconScout CDN-->
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <!-- GOOGLE FONT-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');</style>
 
-  <!-- Custom stylesheet-->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom stylesheet-->
+    <link href="./css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -24,80 +24,81 @@
 
 
 <nav>
-  <div class="container nav__container">
-    <a href="index.html" class="nav__logo"><img src="./images/earth.png" alt="nav logo"></a>
+    <div class="container nav__container">
+        <a class="nav__logo" href="index.html"><img alt="nav logo" src="./images/earth.png"></a>
 
-    <ul class="nav__links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./pictures.html">Pictures</a></li>
-      <li><a href="./videos.html">Videos</a></li>
-      <li><a href="./secrets.html">Best kept secrets!</a></li>
-      <li><a href="./aboutme.html">About me</a></li>
+        <ul class="nav__links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pictures.html">Pictures</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./secrets.html">Best kept secrets!</a></li>
+            <li><a href="./aboutme.html">About me</a></li>
 
-    </ul>
+        </ul>
 
-    <ul class="nav__socials">
-      <li><a href="https://api.whatsapp.com/send?phone=+37125750577&text=Hello!" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
-      <li><a href="https://www.instagram.com/explore/locations/793207234/gran-canaria/" target="_blank"><i class="uil uil-instagram"></i></a></li>
-      <li><a href="https://twitter.com/gctourism" target="_blank"><i class="uil uil-twitter-alt"></i></a></li>
-      <li><a href="https://www.youtube.com/watch?v=yw7v2UyObc8" target="_blank"><i class="uil uil-youtube"></i></a></li>
-      <li><a href="signin.html" target="_blank"><i class="uil uil-signin"></i></a></li>
+        <ul class="nav__socials">
+            <li><a href="https://api.whatsapp.com/send?phone=+37125750577&text=Hello!" target="_blank"><i
+                    class="uil uil-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/explore/locations/793207234/gran-canaria/" target="_blank"><i
+                    class="uil uil-instagram"></i></a></li>
+            <li><a href="https://twitter.com/gctourism" target="_blank"><i class="uil uil-twitter-alt"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=yw7v2UyObc8" target="_blank"><i
+                    class="uil uil-youtube"></i></a></li>
+            <li><a href="signin.html" target="_blank"><i class="uil uil-signin"></i></a></li>
 
-    </ul>
+        </ul>
 
-    <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
-    <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+        <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
 
-  </div>
+    </div>
 </nav>
 
 <section class="AboutMe">
-  <div class="profile">
-  </div>
+    <div class="profile">
+    </div>
 
-  <div class="container2">
-    <form id="suggestion_box" action="" method="post">
-        <fieldset>
-          <legend> Have you been to Gran Canaria??<span aria-label="required">*</span></legend>
+    <div class="container2">
+        <form action="" id="suggestion_box" method="post">
+            <fieldset>
+                <legend> Have you been to Gran Canaria??<span aria-label="required">*</span></legend>
 
-          <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
-          <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
-        </fieldset>
-        <p>
-          <label for="n1">How old are you?</label>
-          <input type="number" min="18" max="120" step="1" id="n1" name="age" required
-                 pattern="\d+">
-        </p>
-        <p>
-          <label for="t1">What's your favorite island?<span aria-label="required">*</span></label>
-          <input type="text" id="t1" name="island" list="l1" required
-                 pattern="[Tt]enerife|[Gg]ran Canaria||[Ll]anzarote||[Ff]uerteventura||[Ll]a Palma||[Ll]a Gomera||[Ee]l Hierro|">
-          <datalist id="l1">
-            <option>Tenerife</option>
-            <option> Gran Canaria</option>
-            <option>Lanzarote</option>
-            <option>Fuerteventura</option>
-            <option>La Palma</option>
-            <option>La Gomera</option>
-            <option>El Hierro</option>
-          </datalist>
-        </p>
-        <p>
-          <label for="t2">What's your e-mail address?</label>
-          <input type="email" id="t2" name="email" required>
-        </p>
-        <p>
-          <label for="t3">Leave a short message</label>
-          <textarea id="t3" name="msg" minlength="6" maxlength="140" rows="5" required></textarea>
-        </p>
-        <p>
-          <button>Submit</button>
-        </p>
-      </form>
-  </div>
+                <input id="r1" name="driver" required type="radio" value="yes"><label for="r1">Yes</label>
+                <input id="r2" name="driver" required type="radio" value="no"><label for="r2">No</label>
+            </fieldset>
+            <p>
+                <label for="n1">How old are you?</label>
+                <input id="n1" max="120" min="18" name="age" pattern="\d+" required step="1"
+                       type="number">
+            </p>
+            <p>
+                <label for="t1">What's your favorite island?<span aria-label="required">*</span></label>
+                <input id="t1" list="l1" name="island" pattern="[Tt]enerife|[Gg]ran Canaria||[Ll]anzarote||[Ff]uerteventura||[Ll]a Palma||[Ll]a Gomera||[Ee]l Hierro|" required
+                       type="text">
+                <datalist id="l1">
+                    <option>Tenerife</option>
+                    <option> Gran Canaria</option>
+                    <option>Lanzarote</option>
+                    <option>Fuerteventura</option>
+                    <option>La Palma</option>
+                    <option>La Gomera</option>
+                    <option>El Hierro</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="t2">What's your e-mail address?</label>
+                <input id="t2" name="email" required type="email">
+            </p>
+            <p>
+                <label for="t3">Leave a short message</label>
+                <textarea id="t3" maxlength="140" minlength="6" name="msg" required rows="5"></textarea>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </form>
+    </div>
 </section>
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

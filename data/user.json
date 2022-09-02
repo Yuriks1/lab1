@@ -1,9 +1,11 @@
-[{
-  "username": "Juriks",
-  "firstName": "Juris",
-  "lastName": "Adijans",
-  "profession":"Future Java System Developer",
-  "profileURL":" ./images/profile.png",
-  "email": "juriksmk1@tvnet.lv",
-  "description": "Have a great day!"}
+[
+  {
+    "username": "Juriks",
+    "firstName": "Juris",
+    "lastName": "Adijans",
+    "profession": "Future Java System Developer",
+    "profileURL": " ./images/profile.png",
+    "email": "juriksmk1@tvnet.lv",
+    "description": "Have a great day!"
+  }
 ]
