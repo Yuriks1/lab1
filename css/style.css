@@ -450,17 +450,12 @@ area {
     filter: saturate(1);
 }
 
-.swiper-pagination-bullet{
-    background: var(--color-primary);
-}
 
 /*========================Videos==============================*/
 
 #Videos {
 
     margin-top: 8rem;
-
-
 }
 
 
@@ -769,6 +764,7 @@ fieldset {
 #Gallery{
 
     margin-top: 10rem;
+    filter: none;
 }
 
 .gallery__container p{
@@ -950,12 +946,13 @@ fieldset {
     #Videos{
 
         margin-top: 10rem;
-        height: 100%;
-        width: 100%;
+        height: fit-content;
+        width: fit-content;
+
     }
 
 
-    .image-map{
+    .image-map {
 
         width: var(--container-width-md);
         position: relative;
@@ -963,18 +960,19 @@ fieldset {
 
     }
 
-    .AboutMe{
+    .swiper-slide img {
+        filter: none;
+    }
+
+    .AboutMe {
 
         position: center;
-        top: 15rem;
-        left:5rem;
 
     }
 
-    .container2{
+    .container2 {
 
         position: center;
-        top:10rem;
     }
 
 
