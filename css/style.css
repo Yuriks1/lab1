@@ -456,12 +456,11 @@ area {
 
 /*========================Videos==============================*/
 
-#Videos{
+#Videos {
 
-    margin-top: 8rem;
+    margin-top: 6rem;
+
 }
-
-
 
 /*=================================FOOTER!!=======================*/
 
@@ -942,15 +941,15 @@ fieldset {
 
         margin-top: 4rem;
         height: fit-content;
+        width: fit-content;
     }
 
 
     #Videos{
 
         margin-top: 10rem;
-        height: 80%;
-        width: 80%;
-        position: center;
+        height: 100%;
+        width: 100%;
     }
 
 
