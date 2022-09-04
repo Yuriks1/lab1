@@ -94,7 +94,15 @@
                 <textarea id="t3" maxlength="140" minlength="6" name="msg" required rows="5"></textarea>
             </p>
             <p>
-                <button class="myButton" >Submit</button>
+            <div class="dropdown">
+                <button id="myBtn" class="dropbtn">Save As</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a onclick="saveFile()">Text</a>
+                    <a href="#about">PDF</a>
+                </div>
+            </div>
+
+
             </p>
         </form>
     </div>

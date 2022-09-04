@@ -105,16 +105,45 @@ async function renderUser() {
 
 renderUser();
 
-function saveDynamicDataToFile() {
+/*========================Add dropdown button=============*/
 
-    var userInput = document.getElementById("myText").value;
 
-    var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, "dynamic.txt");
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
 
 
 
+/*========================Download text=============*/
 
+let saveFile = () => {
 
+    const age = document.getElementById('n1');
+    const isl = document.getElementById('t1');
+    const email = document.getElementById('t2');
+    const msg = document.getElementById('t3');
 
+    let data =
+        'Age: ' +age.value + ' \r\n ' +
+        'Island: ' +isl.value + ' \r\n ' +
+        'Email: ' + email.value + ' \r\n ' +
+        'Message: ' + msg.value;
+
+    const textToBLOB = new Blob([data], { type: '.txt' });
+    const sFileName = 'formData.txt';
+
+    let newLink = document.createElement("a");
+    newLink.download = sFileName;
+
+    if (window.webkitURL != null) {
+        newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+    }
+    else {
+        newLink.href = window.URL.createObjectURL(textToBLOB);
+        newLink.style.display = "none";
+        document.body.appendChild(newLink);
+    }
+    newLink.click();
+}
