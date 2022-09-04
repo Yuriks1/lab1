@@ -15,6 +15,9 @@
 
     <!-- Custom stylesheet-->
     <link href="./css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 
 </head>
 <body>
@@ -98,12 +101,9 @@
                 <button id="myBtn" class="dropbtn">Save As</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a onclick="saveFile()">Text</a>
-                    <a href="#about">PDF</a>
+                    <a onclick="generatePDF()">PDF</a>
                 </div>
             </div>
-
-
-            </p>
         </form>
     </div>
 </section>
@@ -111,6 +111,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 
 </body>
 </html>
