@@ -105,47 +105,23 @@ async function renderUser() {
 
 renderUser();
 
-/*========================Add dropdown button=============*/
 
+function showAlert() {
 
-document.getElementById("myBtn").onclick = function() {myFunction()};
+    const age = document.getElementById('n1').value;
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+        const isl = document.getElementById('t1').value;
+        const email = document.getElementById('t2').value;
+        const msg = document.getElementById('t3').value;
 
+    if (age.length === 0 || isl.length ===0||email.length===0 ||msg.length===0 ) {
+        alert('Please enter value');}
 
-
-/*========================Download text=============*/
-
-let saveFile = () => {
-
-    const age = document.getElementById('n1');
-    const isl = document.getElementById('t1');
-    const email = document.getElementById('t2');
-    const msg = document.getElementById('t3');
-
-    let data =
-        'Age: ' +age.value + ' \r\n ' +
-        'Island: ' +isl.value + ' \r\n ' +
-        'Email: ' + email.value + ' \r\n ' +
-        'Message: ' + msg.value;
-
-    const textToBLOB = new Blob([data], { type: '.txt' });
-    const sFileName = 'formData.txt';
-
-    let newLink = document.createElement("a");
-    newLink.download = sFileName;
-
-    if (window.webkitURL != null) {
-        newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-    }
     else {
-        newLink.href = window.URL.createObjectURL(textToBLOB);
-        newLink.style.display = "none";
-        document.body.appendChild(newLink);
+        window.alert(" Age : " + age + "  Favorite island : " + isl + "  email : " + email +
+            "  Message :" + msg);
+
     }
-    newLink.click();
 }
 
 
@@ -155,20 +131,3 @@ let saveFile = () => {
 
 
 
-/*============Save as PDF================*/
-
-function generatePDF() {
-
-    var element = document.getElementById('suggestion_box');
-    element.style.width = '400px';
-    element.style.height = '600px';
-    var opt = {
-        margin:       0.5,
-        filename:     'myfile.pdf',
-        image:        { type: 'jpeg', quality: 1 },
-        html2canvas:  { scale: 1 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait',precision: '12' }
-    };
-
-    html2pdf().set(opt).from(element).save();
-}
