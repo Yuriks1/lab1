@@ -982,9 +982,10 @@ display: none    }
 
     .image-map {
 
-        width: var(--container-width-md);
-        position: relative;
-        left: 1rem;
+        width: 100%;
+        top: 11rem;
+        left: 0;
+
 
     }
 
