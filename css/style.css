@@ -91,14 +91,6 @@ nav{
 }
 
 
-.window-scrolled{
-
-    background: var(--color-bg-2);
-    border-bottom: 0.2rem solid var(--color-bg-3);
-    box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
-
-
-}
 .nav__container{
     height: 100%;
     display: flex;
@@ -238,11 +230,6 @@ header{
 
 /* only shows on phones*/
 
-.header__btn-md{
-
-    display: none;}
-
-
 
 /*=================================About!=======================*/
 
@@ -272,12 +259,6 @@ header{
     height: 30rem;
 
 }
-
-.about__image-bg{
-    position: absolute;
-
-}
-
 
 
 .about__right{
@@ -379,24 +360,6 @@ area {
 
 .input-group input:focus {
     box-shadow: 0 0 0 1px hsl(var(--color-primary));
-}
-
-.input-group .msg {
-    display: none;
-    font-size: .75rem;
-}
-
-.input-group.success .msg,
-.input-group.error .msg {
-    display: block;
-}
-
-.input-group.error .msg {
-    color: hsl(var(--color-bg-4));
-}
-
-.input-group.success .msg {
-    color: hsl(var(--color-primary-variant));
 }
 
 .login-button {
@@ -551,12 +514,6 @@ footer{
     display: block;
     font-size: 30px;
     font-weight: 400;
-}
-
-#suggestion_boxh4 {
-    margin:5px 0 15px;
-    display:block;
-    font-size:13px;
 }
 
 #suggestion_box h5 {
@@ -1032,16 +989,6 @@ display: none    }
 .myButton:active {
     position:relative;
     top:1px;
-}
-
-
-.dropbtn {
-    background-color: red;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
 }
 
 
