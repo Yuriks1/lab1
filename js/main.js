@@ -109,10 +109,9 @@ renderUser();
 function showAlert() {
 
     const age = document.getElementById('n1').value;
-
-        const isl = document.getElementById('t1').value;
-        const email = document.getElementById('t2').value;
-        const msg = document.getElementById('t3').value;
+    const isl = document.getElementById('t1').value;
+    const email = document.getElementById('t2').value;
+    const msg = document.getElementById('t3').value;
 
     if (age.length === 0 || isl.length ===0||email.length===0 ||msg.length===0 ) {
         alert('Please enter value');}
